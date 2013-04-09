@@ -2,7 +2,7 @@ import csv
 from datetime import date, datetime, timedelta
 
 
-def is_rangers_at_home(today=date.today()):
+def rangers_is_at_home(today=date.today()):
     with open('fixtures.csv', 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter=';')
         for row in reader:
