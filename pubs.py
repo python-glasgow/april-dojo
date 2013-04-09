@@ -45,7 +45,7 @@ def find_pubs(pub_type='pub'):
 
     ret_dict = {}
     for station in stations.stations:
-        print '{0} {1} {2}'.format(station['name'], station['lat'], station['lng'])
+        # print '{0} {1} {2}'.format(station['name'], station['lat'], station['lng'])
         station_name = station['name'].lower()
         the_url = build_query(station['lat'], station['lng'], 500, category)
         opener = urllib2.build_opener()
